@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局，两列固定宽度，一列自适应</title>
+    <style>
+        /*.left{
+            position: absolute;
+            left:0px;
+            top:10px;
+            width:30px;
+            height:500px;
+            background: red;
+        }
+        .right{
+            position: absolute;
+            right:0px;
+            top:10px;
+            width:50px;
+            height:500px;
+            background: green;
+        }
+        .center{
+            margin:10px 42px 0 22px;
+            background: #000;
+            height:500px;
+        }*/
+
+       /*.left{
+            float: left;
+            width:30px;
+            height:500px;
+            background: red;
+        }
+        .right{
+            float: right ;
+            width:50px;
+            height:500px;
+            background: green;
+        }
+        .center{
+            margin:10px 50px 0 20px;
+            background: #000;
+            height:500px;
+        }*/
+        .main{
+            display: flex;
+            flex-direction: row;
+        }
+        .left{
+            width:100px;
+            height:500px;
+            background: red;
+            order:-1;
+        }
+        .center{
+            height:500px;
+            background: black;
+            flex:1;
+        }
+        .right{
+            width:100px;
+            height:500px;
+            background: green;
+            order:1;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+<div class="right"></div>
+<div class="left"></div>
+<div class="center"></div>
+</div>
+</body>
+</html>
